@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.retry.with.IAnnotation.transformer.TestClass2">
+        <methods>
+          <include name="test5"/>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- com.retry.with.IAnnotation.transformer.TestClass2 -->
+      <class name="com.retry.with.IAnnotation.transformer.RetryTestExecutionWithIAnnotationTransform">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.retry.with.IAnnotation.transformer.RetryTestExecutionWithIAnnotationTransform -->
+      <class name="com.retry.classes.RetryTestExecution">
+        <methods>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.retry.classes.RetryTestExecution -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
